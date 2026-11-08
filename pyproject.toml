@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shelf"
+version = "0.1.0"
+description = "Back up idle Mac folders to Google Drive, then free the local copies."
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.scripts]
+shelf = "shelf.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
